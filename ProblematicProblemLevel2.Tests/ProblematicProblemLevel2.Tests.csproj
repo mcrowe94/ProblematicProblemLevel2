@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ProblematicLibrary\ProblematicLibrary.csproj" />
+    <ProjectReference Include="..\ProblematicProblemLevel2\ProblematicProblemLevel2.csproj" />
   </ItemGroup>
 
 </Project>

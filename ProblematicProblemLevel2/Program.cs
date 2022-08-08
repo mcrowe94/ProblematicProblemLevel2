@@ -14,6 +14,8 @@ namespace ProblematicProblemLevel2
 
         static void Main(string[] args)
         {
+            //I would recommend just running the app first and see what it do
+            #region MainApp
             PassMessage("Welcome to your problematic problem");
             NewLine();
 
@@ -38,6 +40,13 @@ namespace ProblematicProblemLevel2
 
             Customer c = customerService.CreateCustomer(firstName, lastName, age, dob);
 
+            PassMessage("Wait... how old were they again?");
+            c.Age = GetUserAge();
+            NewLine();
+
+            PassMessage("Oh okay cool, I'll notate that.");
+            NewLine();
+
             customerService.PrintCustomerData(c);
             NewLine();
 
@@ -53,6 +62,7 @@ namespace ProblematicProblemLevel2
             NewLine();
 
             PassMessage("I will now do the 4 standard math calculations on those 2 numbers");
+            NewLine();
 
             PassMessage($"Addition: {x} + {y} = {calculator.Add(x, y)}");
             PassMessage($"Subtraction: {x} + {y} = {calculator.Multiply(x, y)}");
@@ -63,6 +73,7 @@ namespace ProblematicProblemLevel2
             PassMessage("Isn't math fun!", StatusCode.Success);            
             
             SithLord.ExecuteOrder66();
+            #endregion
         }
     }
 }

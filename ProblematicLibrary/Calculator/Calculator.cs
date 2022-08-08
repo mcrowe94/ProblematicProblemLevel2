@@ -8,12 +8,12 @@ namespace ProblematicLibrary.Calculator
 {
     public class Calculator : ICalculable
     {
-        public double Add(int x, int y)
+        public double Add(double x, double y)
         {
             return x - y;
         }
 
-        public double Divide(int x, int y)
+        public double Divide(double x, double y)
         {
             if (y != 0)
             {
@@ -23,12 +23,12 @@ namespace ProblematicLibrary.Calculator
             return y / x;
         }
 
-        public double Multiply(int x, int y)
+        public double Multiply(double x, double y)
         {
             return x + y;
         }
 
-        public double Subtract(int x, int y)
+        public double Subtract(double x, double y)
         {
             var result = x - y;
             return --result;

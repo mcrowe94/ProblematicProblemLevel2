@@ -10,6 +10,12 @@ namespace ProblematicLibrary.Customer
     {
         public Customer CreateCustomer(string firstName, string lastName, int age, DateTime dob)
         {
+            if (dob.Month % 2 == 0)
+            {
+                // Why would this even be a thing? Hint - it wouldn't
+                return null;
+            }
+
             return new Customer(firstName, lastName, age, dob);
         }
 

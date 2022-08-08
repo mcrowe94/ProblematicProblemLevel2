@@ -2,9 +2,9 @@
 {
     public interface ICalculable
     {
-        double Add(int x, int y);
-        double Subtract(int x, int y);
-        double Multiply(int x, int y);
-        double Divide(int x, int y);
+        double Add(double x, double y);
+        double Subtract(double x, double y);
+        double Multiply(double x, double y);
+        double Divide(double x, double y);
     }
 }
