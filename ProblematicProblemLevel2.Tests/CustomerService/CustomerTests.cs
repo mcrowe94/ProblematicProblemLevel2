@@ -11,11 +11,11 @@ namespace ProblematicProblemLevel2.Tests
     public class CustomerTests
     {
         private static Random rng = new Random();
-        private static CustomerService sut = new CustomerService();
+        private static CustomerService sut = new CustomerService(); // sut = System Under Test - The object that has the methods we are testing
         private const string FIRST_NAME = "Cruz";
         private const string LAST_NAME = "Sanchez";
-        private const int AGE = 29;
-        private readonly DateTime Dob = new DateTime(1992, 11, 2);
+        private const int AGE = 40;
+        private readonly DateTime Dob = new DateTime(1985, 1, 22);
 
         [Fact]
         public void Should_GetCustomerFullName()
