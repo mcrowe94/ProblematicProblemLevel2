@@ -9,8 +9,6 @@ namespace ProblematicProblemLevel2.Interaction
 {
     internal static class UserInteraction
     {
-        private static DateTime age;
-
         internal static string GetUserInput()
         {
             return Console.ReadLine();
