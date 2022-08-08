@@ -12,7 +12,7 @@ namespace ProblematicProblemLevel2.Interaction
         /// <summary>
         /// Wrapper for Console.ReadLine();
         /// </summary>
-        /// <returns>Returns the data typed to the console from the user</returns>
+        /// <returns>Returns a string representation of the data typed to the console from the user</returns>
         internal static string GetUserInput()
         {
             return Console.ReadLine();
