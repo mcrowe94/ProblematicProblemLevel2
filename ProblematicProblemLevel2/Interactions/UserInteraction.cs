@@ -9,6 +9,10 @@ namespace ProblematicProblemLevel2.Interaction
 {
     internal static class UserInteraction
     {
+        /// <summary>
+        /// Wrapper for Console.ReadLine();
+        /// </summary>
+        /// <returns>Returns the data typed to the console from the user</returns>
         internal static string GetUserInput()
         {
             return Console.ReadLine();
