@@ -14,7 +14,7 @@ namespace ProblematicProblemLevel2
 
         static void Main(string[] args)
         {
-            //I would recommend just running the app first and see what it do
+            //I would recommend just running the app first and see what it does
             #region MainApp
             PassMessage("Welcome to your problematic problem");
             NewLine();
