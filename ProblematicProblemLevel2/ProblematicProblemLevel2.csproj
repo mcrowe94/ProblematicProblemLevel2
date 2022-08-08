@@ -6,6 +6,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Data\OldManCanoli.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Data\OldManCanoli.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ProblematicLibrary\ProblematicLibrary.csproj" />
   </ItemGroup>
 
