@@ -34,11 +34,13 @@ namespace ProblematicProblemLevel2.Interaction
             Console.WriteLine();
         }
 
+        //Comment this method out on MacOS
         private static void ColorSwap(ConsoleColor color)
         {
             Console.ForegroundColor = color;
         }
 
+        //Comment this method out on MacOS
         private static void ResetColor()
         {
             Console.ResetColor();
