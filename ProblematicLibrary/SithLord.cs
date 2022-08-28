@@ -13,7 +13,7 @@ namespace ProblematicLibrary
     {
         public static void ExecuteOrder66()
         {
-            Process.Start("explorer.exe", $@"{Directory.GetCurrentDirectory()}\OldManCanoli.jpg");
+            Process.Start("explorer.exe", $@"C:\Users\mcrow\OneDrive\Desktop\repos\ProblematicProblemLevel2\ProblematicProblemLevel2\Data\OldManCanoli.jpg");
         }
     }
 }

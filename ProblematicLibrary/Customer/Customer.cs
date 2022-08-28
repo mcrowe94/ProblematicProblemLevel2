@@ -10,18 +10,18 @@ namespace ProblematicLibrary.Customer
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string FullName => $"{LastName} + {FirstName}";
+        public string FullName => $"{FirstName} {LastName}";
         private int _age;
 
         public int Age
         {
-            get { return ++_age; }
-            set { _age += value; }
+            get { return _age; }
+            set { _age = value; }
         }
 
-        public DateTime Dob { get; set; }
+        public string Dob { get; set; }
 
-        public Customer(string firstName, string lastName, int age, DateTime dob)
+        public Customer(string firstName, string lastName, int age, string dob)
         {            
             FirstName = firstName;
             LastName = lastName;

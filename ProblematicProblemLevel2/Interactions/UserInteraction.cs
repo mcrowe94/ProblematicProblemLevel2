@@ -20,36 +20,36 @@ namespace ProblematicProblemLevel2.Interaction
 
         internal static int GetUserAge()
         {
-            int age;
+            int age = int.Parse(Console.ReadLine());
 
-            while (int.TryParse(GetUserInput(), out age))
-            {
-                ConsoleLogging.PassMessage("That is not a number\nTry again...", StatusCode.Error);
-            }
+            //while (int.TryParse(GetUserInput(), out age))
+            //{
+            //    ConsoleLogging.PassMessage("That is not a number\nTry again...", StatusCode.Error);
+            //}
 
             return age;
         }
 
-        internal static DateTime GetUserDob()
+        internal static string GetUserDob()
         {
-            DateTime dob;
+            string dob = Console.ReadLine();
 
-            while (DateTime.TryParse(GetUserInput(), out dob))
-            {
-                ConsoleLogging.PassMessage("That is not a valid dob please do dd/mm/yyyy \nTry again...", StatusCode.Error);
-            }
+            //while (int.Parse(GetUserInput(), out dob))
+            //{
+            //    ConsoleLogging.PassMessage("That is not a valid dob please do dd/mm/yyyy \nTry again...", StatusCode.Error);
+            //}
 
             return dob;
         }
 
         internal static int GetUserNumber()
         {
-            int num;
+            int num = int.Parse(Console.ReadLine());
 
-            while (int.TryParse(GetUserInput(), out num))
-            {
-                ConsoleLogging.PassMessage("That is not a valid number \nTry again...", StatusCode.Error);
-            }
+            //while (int.TryParse(GetUserInput(), out num))
+            //{
+            //    ConsoleLogging.PassMessage("That is not a valid number \nTry again...", StatusCode.Error);
+            //}
 
             return num;
         }

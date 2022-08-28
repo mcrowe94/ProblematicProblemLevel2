@@ -35,7 +35,7 @@ namespace ProblematicProblemLevel2
             NewLine();
 
             PassMessage("Please enter their date of birth...");
-            DateTime dob = GetUserDob();
+            string dob = GetUserDob();
             NewLine();
 
             Customer c = customerService.CreateCustomer(firstName, lastName, age, dob);
@@ -44,7 +44,18 @@ namespace ProblematicProblemLevel2
             c.Age = GetUserAge();
             NewLine();
 
-            PassMessage("Oh okay cool, I'll notate that.");
+            if(c.Age == age)
+            {
+                Console.WriteLine("Oh yeah, that's right!");
+                NewLine();
+            }
+            else if(c.Age != age)
+            {
+                Console.WriteLine("I don't think so, but we'll go with that...");
+                NewLine();
+            }
+
+            PassMessage("Thanks, I'll notate that.");
             NewLine();
 
             customerService.PrintCustomerData(c);
@@ -65,9 +76,9 @@ namespace ProblematicProblemLevel2
             NewLine();
 
             PassMessage($"Addition: {x} + {y} = {calculator.Add(x, y)}");
-            PassMessage($"Subtraction: {x} + {y} = {calculator.Multiply(x, y)}");
-            PassMessage($"Multiplication: {x} + {y} = {calculator.Divide(x, y)}");
-            PassMessage($"Division: {x} + {y} = {calculator.Subtract(x, y)}");
+            PassMessage($"Subtraction: {x} - {y} = {calculator.Subtract(x, y)}");
+            PassMessage($"Multiplication: {x} * {y} = {calculator.Multiply(x, y)}");
+            PassMessage($"Division: {x} / {y} = {calculator.Divide(x, y)}");
             NewLine();
 
             PassMessage("Isn't math fun!", StatusCode.Success);            
